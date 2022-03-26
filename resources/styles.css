@@ -1,0 +1,152 @@
+/* Questions: 
+- How to center the locations
+- How to full width the header in smaller responsive design models
+- How to correct sizing for responsive design
+*/
+
+
+html {
+    background-color: black;
+    color: seashell;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    opacity: 0.9;
+
+}
+
+/* Header Section */
+
+header {
+    position: sticky;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    min-width: 100%;
+    z-index: 1;
+    background-color: black;
+    top: 0;
+    margin: 0;
+}
+
+header img {
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+nav {
+    display: block;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: underline;
+    padding-right: 5px;
+}
+
+/* Mission Section */
+
+main {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mission {
+    position: relative;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 100%;
+}
+
+h2, h4, h5 {
+    text-align: center;
+}
+
+/* Featured Tea Section */
+
+.featuredtea {
+    width: 1000px;
+    margin: 180px auto 100px auto;
+
+}
+
+.menupics {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pic {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.pic img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.pic > h4 {
+    margin-top: 0;
+}
+/* Locations Section */
+
+.findus {
+    margin: 0 auto;
+    background-image: url("./locations.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+}
+
+.findus > h2 {
+    margin-bottom: 0;
+    padding-top: 50px;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 15px 30px;
+    background-color: black;
+}
+
+footer {
+    height: 200px;
+    font-weight: 300;
+}
+
+.copyright {
+    padding-left: 20px;
+    float: left;
+    font-size: 18px;
+}
